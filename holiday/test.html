@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/test.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+
+<body>
+  <header>
+    <div class="back-bird"></div><img class="logo-header" src="images/tisseason_blueoutline.png"/>
+    <div class="fore-bird"></div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="content">
+        <h2>Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad nisi neque, sunt excepturi soluta aliquid voluptas nihil. Et dolorem mollitia tenetur fugit sequi voluptas delectus officiis rerum fuga, fugiat quae dolore nemo pariatur. Quibusdam et aliquid a eos porro earum dignissimos itaque, nobis dolor impedit tempora ullam ipsam doloremque magnam cumque sunt, quod ut eaque autem explicabo consectetur vel obcaecati dicta rerum cupiditate. Nobis voluptatum dolor doloribus alias ipsum similique, adipisci voluptatibus perferendis sequi dolorem, aperiam eaque nostrum voluptate veniam autem deleniti commodi magnam necessitatibus totam quaerat animi voluptatem incidunt omnis illo. Dolore, iure, temporibus adipisci modi quibusdam maiores!</p>
+      </div>
+      <div class="posts row">
+        <div class="post one-third column"><img src="https://raw.githubusercontent.com/DevTips/Parallax-on-the-Web-DevTips-/master/images/model2.jpg"/></div>
+        <div class="post one-third column"><img src="https://raw.githubusercontent.com/DevTips/Parallax-on-the-Web-DevTips-/master/images/model2.jpg"/></div>
+        <div class="post one-third column"><img src="https://raw.githubusercontent.com/DevTips/Parallax-on-the-Web-DevTips-/master/images/model2.jpg"/></div>
+      </div>
+    </div>
+  </section>
+<script>
+var logo = document.querySelector('.logo-header'),
+    blurredBird = document.querySelector('.back-bird'),
+    foreBird = document.querySelector('.fore-bird');
+
+
+window.addEventListener('scroll', function() {
+
+    var scrolled = window.scrollY;
+
+    logo.style.transform = "translate(0px," + scrolled/2 +"%)";
+    blurredBird.style.transform = "translate(0px," + scrolled/5 +"%)";
+    foreBird.style.transform = "translate(0px,-" + scrolled/80 +"%)";
+
+});
+
+
+var forEach = function (array, callback) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(null, i, array[i]);
+  }
+};
+</script>
+</body>
+</html>

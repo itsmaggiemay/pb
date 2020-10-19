@@ -1,0 +1,60 @@
+header {
+  position: relative;
+  height: 600px;
+  background: url("../images/bg_1.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+header .logo-header {
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+header .fore-bird {
+  position: absolute;
+  /* top: 350px; */
+  left: 50%;
+  width: 960px;
+  height: 733px;
+  margin-left: -480px;
+  background-image: url("../deer.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: 1;
+  background-size: contain
+}
+header .back-bird {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px;
+  height: 298px;
+  background-image: url("https://raw.githubusercontent.com/DevTips/Parallax-on-the-Web-DevTips-/master/images/back-bird.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.posts img {
+  width: 100%;
+}
+.posts .post {
+  opacity: 0;
+  transition: all 1s ease;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+.posts .post.active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.content {
+  margin: 50px auto;
+}

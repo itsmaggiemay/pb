@@ -1,0 +1,500 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* Custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+  /* background-image: url('../images/bg_1.png'); */
+  background-image: url('../videos/printsspread.gif');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* header {
+  position: relative;
+  height: 800px;
+  background: url('../images/background.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+} */
+
+/* .printgif {
+  background-image: url('../videos/printsspread.gif');
+  background-size: cover;
+  height: 400px;
+} */
+.intro {
+  /* background: url('../images/longbg.png'); */
+  /* background: url('../images/spread_together.png'); */
+  background: #a51f1f;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+.build {
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.booknow {
+  display: block;
+  margin: 0 auto;
+}
+
+.tis {
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.holiday {
+  background-image: url('../images/winter.jpg');
+  height: 800px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.winter {
+  object-fit: cover;
+  height: 320px;
+}
+
+.blackwhite {
+  object-fit: cover;
+  height: 350px;
+}
+.strips_container {
+  position: relative;
+  height: 320px;
+}
+.strip_1 {
+  width: 80px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+.strip_2 {
+  width: 80px;
+  transform: rotate(120deg);
+  position: absolute;
+}
+
+.square_1 {
+  width: 100px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+}
+.square_2 {
+  width: 100px;
+  transform: rotate(120deg);
+  position: absolute;
+  left: 50px;
+  bottom: 100px;
+}
+
+.metallic {
+  object-fit: cover;
+  height: 320px;
+}
+
+.spread {
+  /* background: url('../images/longbg.png'); */
+  background: url('../images/spread_together.png');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+}
+
+.snowballs {
+  background-image: url('../videos/snowballs.gif');
+  height: 480px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hover-image {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+  /* margin: 10px; */
+  /* min-width: 230px;
+  max-width: 315px; */
+  /* width: 100%; */
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}
+
+.hover-image * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.hover-image img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+.hover-image .border {
+  position: absolute;
+  opacity: 0.45;
+}
+.hover-image .border:before,
+.hover-image .border:after,
+.hover-image .border div:before,
+.hover-image .border div:after {
+  background-color: #2980b9;
+  position: absolute;
+  content: '';
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.hover-image .border:before,
+.hover-image .border:after {
+  width: 0;
+  height: 1px;
+}
+.hover-image .border div:before,
+.hover-image .border div:after {
+  width: 1px;
+  height: 0;
+}
+
+.hover-image .border.one {
+  left: 0;
+  top: 0;
+  right: 12px;
+  bottom: 12px;
+}
+.hover-image .border.one:before,
+.hover-image .border.one div:before {
+  left: 0;
+  top: 0;
+}
+.hover-image .border.one:after,
+.hover-image .border.one div:after {
+  bottom: 0;
+  right: 0;
+}
+.hover-image .border.two {
+  left: 12px;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+}
+.hover-image .border.two:before,
+.hover-image .border.two div:before {
+  right: 0;
+  top: 0;
+}
+.hover-image .border.two:after,
+.hover-image .border.two div:after {
+  bottom: 0;
+  left: 0;
+}
+
+.hover-image:hover .border:before,
+.hover-image.hover .border:before,
+.hover-image:hover .border:after,
+.hover-image.hover .border:after {
+  width: 100%;
+}
+.hover-image:hover .border div:before,
+.hover-image.hover .border div:before,
+.hover-image:hover .border div:after,
+.hover-image.hover .border div:after {
+  height: 100%;
+}
+
+.hover-image figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover-image h3,
+.hover-image h5 {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 3px;
+  font-size: 32px;
+  text-shadow: 2px 2px #2980b9;
+}
+
+.hover-image h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.hover-image:hover > a > .thumbnail {
+  opacity: 0.6;
+}
+
+.hover-image:hover h3,
+.hover-image.hover h3,
+.hover-image:hover h5,
+.hover-image.hover h5 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hover-image a {
+  font-size: 50px;
+  color: #fff;
+}
+.hover-image a:hover {
+  font-size: 50px;
+  color: #eef8fe;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox video {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+header .logo-header {
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+header .snowhills {
+  position: absolute;
+  bottom: -63px;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/snowhills.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: 23;
+}
+header .animals {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 800px;
+  background-image: url('../images/animals.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 29;
+}
+
+.long {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* SNOW */
+
+#snow {
+  background: none;
+  background-image: url('http://email.toinfinity.co.uk/files/amf_to_infinity/workspace_8/Christmas_2016/snow1.png'),
+    url('http://email.toinfinity.co.uk/files/amf_to_infinity/workspace_8/Christmas_2016/snow2.png'),
+    url('http://email.toinfinity.co.uk/files/amf_to_infinity/workspace_8/Christmas_2016/snow3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 400px 1000px, 200px 400px, 100px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.kymo {
+  position: relative;
+  line-height: 0;
+}
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 64px;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.prints {
+  padding: 80px 0;
+}
+
+.digital {
+  background: #07401c;
+  padding: 40px 0;
+  color: white;
+}
+
+.packages {
+  padding: 40px 0;
+}
+
+img.props {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.snowball_gif {
+  margin-top: 5%;
+}
+
+@media (max-width: 500px) {
+  .blackwhite {
+    object-fit: cover;
+    height: auto;
+  }
+
+  .snowball_gif {
+    margin-top: 0;
+  }
+
+  .snowballs {
+    height: 300px;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
