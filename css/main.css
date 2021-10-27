@@ -1,95 +1,108 @@
-* { font-family:  'Karla' }
+* {
+    font-family: 'Karla'
+}
+
+
 /*.desktop {
   display: block;*/
+
+
 /*  position: fixed;*/
-  /*box-sizing: border-box;
+
+
+/*box-sizing: border-box;
   width: 100%;
   text-align: center;
 } */
 
-.nav-links{
-  position: relative;
-  float: right;
-  margin: 2.3em;
-} 
+.nav-links {
+    position: relative;
+    float: right;
+    margin: 48px;
+}
 
 .nav-links a {
-  position: relative;
-  text-decoration: none;
-  margin-right: 24px;
-  letter-spacing: 1.2px;
+    position: relative;
+    text-decoration: none;
+    margin-right: 24px;
+    letter-spacing: 1.2px;
 }
 
 .logo {
-  float: left;
-  display: block;
-  width: 25%;
-  margin: 1em;
+    float: left;
+    display: block;
+    width: 25%;
+    margin: 1em;
 }
 
 .main {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 h1 {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
 }
-a:visited{
-  color: #000;
+
+a:visited {
+    color: #000;
 }
-a:hover{
-  border-bottom: 1px dashed #000; 
-  text-decoration: none;
-  color: #4f9bc3;
+
+a:hover {
+    border-bottom: 1px dashed #000;
+    text-decoration: none;
+    color: #4f9bc3;
 }
 
 a.svg {
- position: relative;
- display: inline-block; 
+    position: relative;
+    display: inline-block;
 }
+
 a.svg:after {
-  content: ""; 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left:0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-#weddinglovely{
-  width: 15%;
+#weddinglovely {
+    width: 15%;
 }
+
 .u {
-  color: #4f9bc3;
-}
-.u:hover{
-  color: #000;
+    color: #4f9bc3;
 }
 
-#the-booth{
-  margin: 40px auto;
-  width: 75%;
+.u:hover {
+    color: #000;
+}
+
+#the-booth {
+    margin: 40px auto;
+    width: 75%;
 }
 
 #the-booth h1 {
-  text-align: center;
+    text-align: center;
 }
 
 #the-booth p {
-  width: 100%;
-  margin: 40px auto;
-  text-align:center;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
 }
-#contact{
-  background: rgba(79,155,195,0.2);
 
+#contact {
+    background: rgba(79, 155, 195, 0.2);
 }
 
 article {
@@ -99,6 +112,8 @@ article {
     width: 49%;
     text-align: center;
 }
+
+
 /*#the-team h1 {
   text-align: center;
   margin-top: 40px;
@@ -129,60 +144,76 @@ article {
 #the-team .name {
   display: block;
 }*/
+
 #contact {
-  padding-top:32px;
-}
-.email {
-  text-align: center;
+    padding-top: 32px;
 }
 
+.email {
+    text-align: center;
+}
+
+
 /**====================**/
+
+
 /*      OLD FORM       */
+
+
 /**===================**/
 
 label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
+
+
 /* Centre the form within the page */
+
 form {
-    margin:0 auto;
-    width:459px;
+    margin: 0 auto;
+    width: 459px;
 }
+
 
 /* Style the text boxes */
-input, textarea {
-  width:439px;
-  height:27px;
-  background:#efefef;
-  border:1px solid #dedede;
-  padding:10px;
-  margin-top:3px;
-  font-size:0.9em;
-  color:#3a3a3a;
-}
 
-input, textarea {
-    width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
+input,
 textarea {
-  height:213px;
-  background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+    width: 439px;
+    height: 27px;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
 }
 
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
+input,
+textarea {
+    width: 439px;
+    height: 27px;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 213px;
+    background: url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #97d6eb;
 }
 
 
@@ -201,87 +232,94 @@ input:focus, textarea:focus {
   }*/
 
 footer {
-  clear: both;
+    clear: both;
 }
 
 #contact {
-  text-align: center;
+    text-align: center;
 }
 
 iframe {
-  width: 40%;
-  padding-top: 40px;
+    width: 40%;
+    padding-top: 40px;
 }
 
 #modal {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  height: 100%;
-  width: 100%;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
 }
+
 .modalconent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 80%;
-  padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 80%;
+    padding: 20px;
 }
 
-.custom-modal-header{
-  border-bottom: 0px solid;
-  padding: 0.5rem;
+.custom-modal-header {
+    border-bottom: 0px solid;
+    padding: 0.5rem;
 }
 
-.custom-modal-body{
-  text-align: center;
-  padding: 1rem;
+.custom-modal-body {
+    text-align: center;
+    padding: 1rem;
 }
 
-.custom-modal-body h2, .custom-modal-body h4 {
-  color: #000
+.custom-modal-body h2,
+.custom-modal-body h4 {
+    color: #000
 }
 
 .custom-modal-footer {
-  border-top: 0px solid;
-}
-.custom-modal-footer a {
-  width: 100%;
+    border-top: 0px solid;
 }
 
-.custom-modal-footer a:hover{
-  border:0px;
+.custom-modal-footer a {
+    width: 100%;
+}
+
+.custom-modal-footer a:hover {
+    border: 0px;
 }
 
 .custom-modal-footer .btn {
-  border-radius: 50px;
-  width: 100%;
+    border-radius: 50px;
+    width: 100%;
 }
 
 .custom-modal-footer .btn-booth {
-  color: #fff;
-  background-color: #4f9bc3;
-  border-color: #4f9bc3;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    background-color: #4f9bc3;
+    border-color: #4f9bc3;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .custom-modal-footer .btn-booth:hover {
-  color: #000;
-  background-color: #4f9bc3;
-  border-color: #4f9bc3;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #000;
+    background-color: #4f9bc3;
+    border-color: #4f9bc3;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-
+.weddingWireIcon,
+.theKnotIcon {
+    width: 40px;
+    vertical-align: initial;
+}
 
 @media (max-width: 550px) {
-  .logo {
-    margin: 10px 50px;
-    width: 75%;
-  }
+    .logo {
+        margin: 10px 50px;
+        width: 75%;
+    }
 }

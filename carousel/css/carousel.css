@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+.carousel-container {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+}
