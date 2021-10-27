@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <title>Slider Test</title>
+</head>
+<body>
+    <div class="container">
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_1.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_1.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_1.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_1.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_4.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_5.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_6.JPG"></li>
+            <li class="glide__slide"><img src="image/top/theubooth_photobooth_7.JPG"></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            hoverpause: true,
+            focusAt: 'center',
+            autoplay: 2000,
+            type: 'carousel',
+            startAt: 0,
+            perView: 1,
+            breakpoints: {
+                600: {
+                    perView: 1
+                }
+            }
+        }
+        new Glide('.glide', config).mount()
+      </script>
+</body>
+</html>
